@@ -118,6 +118,61 @@
     margin-left: 9px;
 }
 
+.verticalLines {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: .1;
+}
+
+.verticalLines__line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+}
+
+.verticalLines__line_1 {
+    left: 12.7%;
+}
+
+.verticalLines__line_2 {
+    left: 37.7%;
+}
+
+.verticalLines__line_2::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    bottom: 18%;
+    width: 7px;
+    height: 41px;
+    background-color: #ffffff;
+}
+
+.verticalLines__line_3 {
+    right: 37.45%;
+}
+
+.verticalLines__line_4 {
+    right: 12.55%;
+}
+
+.verticalLines__line_4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 16%;
+    width: 7px;
+    height: 41px;
+    background-color: #ffffff;
+}
 
 /* --------------------------------------------------------------------------  */
 /* -------------------------------- SLIDER ----------------------------------  */
@@ -207,3 +262,8 @@
 .socialMediaMenu__link:hover {
     color: #ff2323;
 }
+
+/* --------------------------------------------------------------------------  */
+/* -------------------------------- TABLET ----------------------------------  */
+/* --------------------------------------------------------------------------  */
+
