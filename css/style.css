@@ -184,7 +184,6 @@
 }
 
 .slider {
-    /*width: 93%;*/
     width: 100%;
 }
 
@@ -267,6 +266,27 @@
     position: absolute;
     right: 14%;
     top: 33%;
+    text-align: right;
+}
+
+.sliderDetails::before {
+    position: absolute;
+    left: -10px;
+    bottom: 11px;
+    background-color: #ff2323;
+    width: 50px;
+    height: 2px;
+    content: "";
+}
+
+.sliderDetails::after {
+    position: absolute;
+    left: 40px;
+    bottom: 11px;
+    background-color: #ffffff;
+    width: 20px;
+    height: 2px;
+    content: "";
 }
 
 .sliderCount {
@@ -294,45 +314,10 @@
 }
 
 .sliderNavigation {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+    display: inline-flex;
+    padding: 5px;
 }
 
-.sliderNavigation::after {
-    position: absolute;
-    right: 49px;
-    bottom: 7px;
-    background-color: #ffffff;
-    width: 20px;
-    height: 2px;
-    content: "";
-}
-
-.sliderNavigation::before {
-    position: absolute;
-    right: 69px;
-    bottom: 7px;
-    background-color: #ff2323;
-    width: 50px;
-    height: 2px;
-    content: "";
-}
-
-.sliderNavigation__line {
-    display: flex;
-    height: 2px;
-}
-
-.sliderNavigation__line_long {
-    width: 50px;
-    background-color: #ff2323;
-}
-
-.sliderNavigation__line_short {
-    width: 20px;
-    background-color: #ffffff;
-}
 
 /* --------------------------------------------------------------------------  */
 /* -------------------------------- PROJECTS --------------------------------  */
@@ -346,13 +331,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0 26% 0 8%;
+    padding-left: 8%;
     width: 82%;
     height: 13%;
     background-color: #ffffff;
 }
 
 .projects__name {
+    margin-right: 13%;
     color: #070707;
     /*font-family: Bahnschrift;*/
     font-size: 14px;
@@ -362,6 +348,7 @@
 }
 
 .projects__info {
+    margin-right: 13%;
     color: #868686;
     /*font-family: "Proxima Nova";*/
     font-size: 14px;
@@ -393,4 +380,5 @@
 /* --------------------------------------------------------------------------  */
 /* -------------------------------- TABLET ----------------------------------  */
 /* --------------------------------------------------------------------------  */
+
 
