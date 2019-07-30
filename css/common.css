@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Circle-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Circle-Regular.eot');
+    src: url('../fonts/Circle-Regular.woff') format('woff'),
+    url('../fonts/Circle-Regular.ttf') format('truetype'),
+    url('../fonts/Circle-Regular.otf') format('otf');
+}
+
+
+body {
+    font-family: 'Circle-Regular', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 81px;
+    width: 100%;
+    /*max-width: 1440px;*/
+    box-sizing: border-box;
+}
+
